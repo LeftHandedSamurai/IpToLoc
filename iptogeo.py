@@ -5,7 +5,7 @@ import json
 
 
 def beacon():
-    webhook = "https://webhook.site/a9faeec9-8efd-46f4-a2fb-90daf003a408"
+    webhook = "your_site_or_webhook."
 
     print("[+] Sending request...")
 
@@ -22,7 +22,7 @@ def beacon():
 def apiIP():
 
     ip = sys.argv[1]
-    api = str("https://ipinfo.io/"+ip+"?token=88607959947c24")
+    api = str("https://ipinfo.io/"+ip+"?token=token")
     make_req = requests.get(api)
     print(make_req.text)
     info = open(ip+"information.json", "a+")
